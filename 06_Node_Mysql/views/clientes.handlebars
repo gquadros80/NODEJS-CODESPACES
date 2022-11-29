@@ -1,0 +1,41 @@
+<form action="/cliente/save" method="post">
+    <label>Nome:</label>
+    <input type="text" name="nome" id="">
+    <label>Endereço:</label>
+    <input type="text" name="endereco" id="">
+    <label>E-mail:</label>
+    <input type="text" name="email" id="">
+    <label>cidade:</label>
+    <input type="text" name="cidade" id="">
+    <label>cpf:</label>
+    <input type="text" name="cpf" id="">
+    <label>Data Nascimento:</label>
+    <input type="date" name="dataNascimento" id="">
+    <input type="submit" value="Cadastrar">
+</form>
+<hr>
+<h1>Lista de Clientes</h1>
+<table border = class="table table-striped table-sm">   
+        <tr>
+            <th>Id Cliente</th>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Email</th>
+            <th>Cidade</th>
+            <th>Cpf</th>
+            <th>Data Nascimento</th>
+        </tr>
+        {{#each clientes}}
+        <tr>
+            <td>{{this.id_cliente}}</td>
+            <td>{{this.nome_cliente}}</td>
+            <td>{{this.endereco_cliente}}</td>
+            <td>{{this.email_cliente}}</td>
+            <td>{{this.cidade_cliente}}</td>
+            <td>{{this.cpf_cliente}}</td>
+            <td>{{this.data_nascimento_cliente}}</td>
+            <td><a href="/cliente/">Exibir detalhes</a></td>
+        </tr>
+         {{/each}}
+
+</table>

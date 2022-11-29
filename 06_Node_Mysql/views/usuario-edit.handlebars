@@ -1,0 +1,14 @@
+<h2>Editando Usuário</h2>
+<form action="/usuario/edit/save" method="post">
+    <label>Id Usuário:</label>
+    <input type="text" name="id_usuario" value="{{usuario.id_usuario}}" />
+    <label>Nome:</label>
+    <input type="text" name="nome" value="{{usuario.nome_usuario}}" />
+    <label>Endereço:</label>
+    <input type="text" name="endereco" value="{{usuario.endereco_usuario}}" />
+    <label>E-mail:</label>
+    <input type="email" name="email" value="{{usuario.email_usuario}}" />
+    <label>Data Nascimento:</label>
+    <input type="date" name="dataNascimento" value="{{usuario.data_nascimento_usuario}}" required />
+    <input type="submit" value="Atualizar">
+</form>
