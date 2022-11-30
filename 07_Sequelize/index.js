@@ -93,7 +93,7 @@ app.get('/', (req,res) => {
 
 conn.sync()
 .then(() => {
-    app.listen(3000);
+    app.listen(5500);
 }).catch((erro) => {
     console.log(erro);
 })
